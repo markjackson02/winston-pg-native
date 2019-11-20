@@ -1,7 +1,7 @@
 {
-  "name": "@pauleliet/winston-pg-native",
+  "name": "@markjackson02/winston-pg-native",
   "description": "A Winston transport for PostgreSQL. Uses high performance of native bindings.",
-  "version": "4.4.0",
+  "version": "5.0.0",
   "keywords": [
     "winston 3.X",
     "winston",
@@ -14,9 +14,9 @@
     "libpq"
   ],
   "author": {
-    "name": "Andrei Tretyakov",
-    "email": "andrei.tretyakov@gmail.com",
-    "url": "https://github.com/petpano"
+    "name": "Mark Jackson",
+    "email": "markjackson02@gmail.com",
+    "url": "https://github.com/markjackson02"
   },
   "scripts": {
     "test": "nyc --reporter=text --reporter lcov npm run test:mocha",
@@ -34,7 +34,6 @@
   "main": "lib/winston-pg-native.js",
   "dependencies": {
     "abstract-winston-transport": "^0.5.1",
-    "flatted": "^2.0.0",
     "moment": "^2.23.0",
     "pg": "^7.8.0",
     "pg-native": "^3.0.0",
