@@ -1,15 +1,16 @@
 # winston-pg-native
 
-[![NPM version](https://img.shields.io/npm/v/@pauleliet/winston-pg-native.svg)](https://npmjs.org/package/@pauleliet/winston-pg-native)
-[![NPM Downloads](https://img.shields.io/npm/dm/@pauleliet/winston-pg-native.svg)](https://npmjs.org/package/@pauleliet/winston-pg-native)
-
 A Winston 3.X compatible transport for PostgreSQL. Uses high performance of native bindings via libpq.
+
+# Origin
+
+I forked https://github.com/petpano/winston-pg-native so that I could store the meta object as standard JSON. In the original repo it was being processed by flatted `stringify` method which makes it impossible to query directly because it has to be parsed by flatted parse method to make the data intelligible.
 
 ## Installation
 
 ```console
   $ npm install winston
-  $ npm install @pauleliet/winston-pg-native
+  $ npm install @markjackson02/winston-pg-native
 ```
 
 You must have a table in your PostgreSQL database, for example:
